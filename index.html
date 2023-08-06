@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="src/style.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"
+    >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    -<script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"
+    ></script>
+</head>
+<body class="mx-auto">
+    <form id="loginForm" class = "px-3 py-3 col-xxl-7">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" title="Facebook">
+            <i class="fab fa-facebook-f icons"></i>
+            <span class="icon-label">Facebook</span>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram icons"></i>
+            <span class="icon-label">Instagram</span>
+        </a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-twitter icons my-1"></i> 
+            <span class="icon-label text-end">Twitter</span>
+        </a>
+        <h6 class = "col-xxl-7" id="register">Register</h6>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Username</label>
+        </div>
+        <div class=" form-floating mb-3">
+            <input type="password" class="form-control" id="floatingInput" placeholder="password">
+            <label for="floatingInput">Password</label>
+        </div>
+        <button data-mdb-ripple-color="primary" id = "loginButton" type="button" class="btn btn-primary btn-lg"  onclick="window.location.href = 'new page.html';">Login</button>
+    </form>
+    <form id="registerForm" class = "px-3 py-3 col-xxl-7 mx-5">
+        <div class="me-5">        
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-facebook-f icons"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram icons"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-twitter icons"></i> 
+            </a>
+        </div>
+        <h6 class = "col-xxl-7" id="login">Login</h6>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Username</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Password</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="tel" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Phone number</label>
+        </div>
+        <button id = "registerButton" type="button" class="btn btn-primary">Register</button>
+    </form>
+    <div id="successPopup" class="text-center">
+        <div id="checkAnimation">✅</div>
+        <p>Registration successful!</p>
+        <button id="closePopup" type="button" class="btn btn-secondary">Close</button>
+    </div>
+    
+    <script src = script.js></script>
+</body>
+</html>
